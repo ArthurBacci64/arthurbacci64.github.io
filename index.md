@@ -11,11 +11,11 @@ gcc *.c -o main
 
 If a different command is needed, it probally will be specified, if it is not, please send a issue to [this repo](https://github.com/arthurbacci64/arthurbacci64.github.io). Thanks.
 
-### [Discrete Fourier Transform and Fast Fourier Transform](https://github.com/ArthurBacci64/dft-and-fft)
+### 1st: [Discrete Fourier Transform and Fast Fourier Transform](https://github.com/ArthurBacci64/dft-and-fft)
 
 At the time I am writing this, that is my most recent project. It basicaly takes a signal and returns it's Discrete Fourier Transform. I implemented to methods: the "normal" Discrete Fourier Transform and the Fast Fourier Tranform, a really faster version of it.
 
-#### You need to compile with this command
+**You need to compile with this command**:
 
 You will need to compile with `gcc *.c -lm -lncurses -o main` instead of `gcc *.c -o main`. The entire command for compiling and running looks like the following:
 
