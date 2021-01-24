@@ -4,7 +4,7 @@ title:  "Installing XMonad on Arch Linux"
 ---
 
 # Atr
-## [goto HOMEPAGE;](arthurbacci64.github.io)
+## [goto HOMEPAGE;](https://arthurbacci64.github.io/)
 
 -
 
