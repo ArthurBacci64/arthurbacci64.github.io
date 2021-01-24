@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Atr
 
-You can use the [editor on GitHub](https://github.com/ArthurBacci64/arthurbacci64.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+## My projects
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+These are some of my programming projects, most part, if not all, of them are made in C. The command for compiling and running is usually the same:
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+gcc *.c -o main
+./main
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+If a different command is needed, it probally will be specified, if it is not, please send a issue to [this repo](https://github.com/arthurbacci64/arthurbacci64.github.io). Thanks.
 
-### Jekyll Themes
+### [Discrete Fourier Transform and Fast Fourier Transform](https://github.com/ArthurBacci64/dft-and-fft)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ArthurBacci64/arthurbacci64.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+At the time I am writing this, that is my most recent project. It basicaly takes a signal and returns it's Discrete Fourier Transform. I implemented to methods: the "normal" Discrete Fourier Transform and the Fast Fourier Tranform, a really faster version of it.
 
-### Support or Contact
+#### You need to compile with this command
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+You will need to compile with `gcc *.c -lm -lncurses -o main` instead of `gcc *.c -o main`. The entire command for compiling and running looks like the following:
+
+```
+gcc *.c -lm -lncurses -o main
+./main
+```
+
+Unfortunaly, compiling with ncurses require a \*NIX operating system (Like GNU/Linux, BSDs... and MacOS too) and ncurses installed. If you do not want to compile for ncurses or can not, follow the steps in the `README.md` file, so you cann compile using only `-lm`.
+
+### I will add more projects to here soon
