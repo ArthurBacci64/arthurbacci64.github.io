@@ -27,3 +27,12 @@ gcc *.c -lm -lncurses -o main
 Unfortunaly, compiling with ncurses require a \*NIX operating system (Like GNU/Linux, BSDs... and MacOS too) and ncurses installed. If you do not want to compile for ncurses or can not, follow the steps in the `README.md` file, so you cann compile using only `-lm`.
 
 ### I will add more projects to here soon
+
+## My posts
+
+Some posts about programming, GNU/Linux customization and that sort of things.
+
+{% for post in site.posts %}
+[{{ post.title }}]({{ post.url }})
+{% endfor %}
+
