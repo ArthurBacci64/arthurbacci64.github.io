@@ -34,5 +34,8 @@ Some posts about programming, GNU/Linux customization and that sort of things.
 
 {% for post in site.posts %}
 [{{ post.title }}]({{ post.url }})
+
+{{ post.excerpt }}
+
 {% endfor %}
 
