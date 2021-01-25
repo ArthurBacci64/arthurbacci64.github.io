@@ -33,7 +33,7 @@ Unfortunaly, compiling with ncurses require a \*NIX operating system (Like GNU/L
 Some posts about programming, GNU/Linux customization and that sort of things.
 
 {% for post in site.posts %}
-[{{ post.title }}]({{ post.url }})
+### [{{ post.title }}]({{ post.url }})
 
 {{ post.excerpt }}
 
