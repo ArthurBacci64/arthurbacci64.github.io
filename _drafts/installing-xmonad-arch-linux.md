@@ -1,15 +1,8 @@
 ---
 layout: post
-title:  "Installing XMonad on Arch Linux"
+title:  "How to install XMonad on Arch Linux"
 tags:   xmonad arch linux tiling window manager haskell cabal
 ---
-
-# Atr
-## [goto HOMEPAGE;](https://arthurbacci64.github.io/)
-
--
-
-## How to install XMonad in Arch Linux
 
 Hello, in this tutorial I will demonstrate how you can install XMonad in Arch Linux or most of the Arch-based distributions, including, but not limited to: Parabola GNU/Linux, Arch Linux, Manjaro and Artix.
 
