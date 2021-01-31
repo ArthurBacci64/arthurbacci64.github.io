@@ -11,9 +11,15 @@ gcc *.c -o main
 
 If a different command is needed, it probally will be specified, if it is not, please send a issue to [this repo](https://github.com/arthurbacci64/arthurbacci64.github.io). Thanks.
 
-### 1st: [Discrete Fourier Transform and Fast Fourier Transform](https://github.com/ArthurBacci64/dft-and-fft)
+### 1st: [Teditor, a text editor made with ncurses](https://github.com/ArthurBacci64/Teditor)
 
-At the time I am writing this, that is my most recent project. It basicaly takes a signal and returns it's Discrete Fourier Transform. I implemented to methods: the "normal" Discrete Fourier Transform and the Fast Fourier Tranform, a really faster version of it.
+Follow the instructions in the `README.md` to compile and run
+
+This code only works in \*NIX operating systems (GNU/Linux, BSDs, MacOS...).
+
+### 2nd: [Discrete Fourier Transform and Fast Fourier Transform](https://github.com/ArthurBacci64/dft-and-fft)
+
+It takes a signal and returns it's Discrete Fourier Transform. I implemented to methods: the "normal" Discrete Fourier Transform and the Fast Fourier Tranform, a really faster version of it.
 
 **You need to compile with this command**:
 
