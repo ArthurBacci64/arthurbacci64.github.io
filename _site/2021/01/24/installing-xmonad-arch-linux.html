@@ -1,0 +1,93 @@
+<p>Hello, in this tutorial I will demonstrate how you can install XMonad in Arch Linux or most of the Arch-based distributions, including, but not limited to: Parabola GNU/Linux, Arch Linux, Manjaro and Artix.</p>
+
+<!--more-->
+
+<ol>
+  <li>
+    <p>Install ghcup:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pacman -S curl g++ gcc gmp make ncurses realpath xz-utils
+ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+</code></pre></div>    </div>
+
+    <p>Press <code class="language-plaintext highlighter-rouge">ENTER</code>,  <code class="language-plaintext highlighter-rouge">ENTER</code>,  <code class="language-plaintext highlighter-rouge">NO</code> and  <code class="language-plaintext highlighter-rouge">YES</code></p>
+  </li>
+  <li>
+    <p>Update Cabal and install xmonad:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cabal update
+ cabal install xmonad
+ cabal install --lib xmonad
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>(Optional) Install <code class="language-plaintext highlighter-rouge">xmonad-contrib</code> and <code class="language-plaintext highlighter-rouge">xmonad-extras</code></p>
+
+    <p><code class="language-plaintext highlighter-rouge">xmonad-contrib</code> includes some non-official packages made by the community.</p>
+
+    <p><code class="language-plaintext highlighter-rouge">xmonad-extras</code> includes some non-official packages made by the community that are not in <code class="language-plaintext highlighter-rouge">xmonad-contrib</code> because it has a lot of “heavy” dependencies. Usually you will not need this, but nothing bad will happen if you install.</p>
+  </li>
+  <li>
+    <p>There are two ways</p>
+
+    <p>If you want to use a display manager, then jump the fiveth step, else if you want to login from terminal and start the graphical session with <code class="language-plaintext highlighter-rouge">startx</code>, then jump the sixth step.</p>
+  </li>
+  <li>
+    <p>Adding an xsession for XMonad</p>
+
+    <p>Open <strong>as root</strong>, the file <code class="language-plaintext highlighter-rouge">/usr/share/xsessions/xmonad.desktop</code>(It probally will not exist, create it).</p>
+
+    <p>Write the following in it:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Desktop Entry]
+ Name=XMonad
+ Comment=Log in using XMonad
+ Exec=/home/you/.cabal/bin/xmonad
+ TryExec=/home/you/.cabal/bin/xmonad
+ Type=Application
+</code></pre></div>    </div>
+
+    <p>Remember to change <code class="language-plaintext highlighter-rouge">/home/you/</code> to the path of your home, if you do not know it, do: <code class="language-plaintext highlighter-rouge">echo $HOME</code>.</p>
+  </li>
+  <li>
+    <p>Installing <code class="language-plaintext highlighter-rouge">xinit</code> and making a <code class="language-plaintext highlighter-rouge">~/xinitrc</code></p>
+
+    <p>Install the <code class="language-plaintext highlighter-rouge">xorg-xinit</code> package:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pacman -S xorg-xinit
+</code></pre></div>    </div>
+
+    <p>Now create a file in your home called <code class="language-plaintext highlighter-rouge">xinitrc</code></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> touch ~/.xinitrc
+</code></pre></div>    </div>
+
+    <p>And put this content on it:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> echo "exec xmonad" &gt; ~/.xinitrc
+</code></pre></div>    </div>
+
+    <p>Now, you will need to disable your display manager.</p>
+
+    <p>If you are using systemd:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> systemctl disable displaymanagername
+</code></pre></div>    </div>
+
+    <p>Replace <code class="language-plaintext highlighter-rouge">displaymanagername</code> to the name of your display manager, it can be <code class="language-plaintext highlighter-rouge">sddm</code>, <code class="language-plaintext highlighter-rouge">lightdm</code>, <code class="language-plaintext highlighter-rouge">gdm</code>…</p>
+
+    <p>If you are not using systemd, you probally is a advanced user and knows how to do the things. Does not you?</p>
+  </li>
+  <li>
+    <p>It is done!</p>
+
+    <p>Reboot your computer.</p>
+
+    <p>If you are using a display manager, it probally will have a place where you can change the selected Window Manager or Desktop Enviroment, select <code class="language-plaintext highlighter-rouge">xmonad</code> and login.</p>
+
+    <p>If you are using <code class="language-plaintext highlighter-rouge">xinit</code> / <code class="language-plaintext highlighter-rouge">startx</code> (my favourite way) then, login and type <code class="language-plaintext highlighter-rouge">startx</code> in the command line that will appear.</p>
+  </li>
+</ol>
+
+<p>If you had any problem with the installation, please contact me, my e-mail is <code class="language-plaintext highlighter-rouge">arthurbacci@protonmail.com</code>.</p>
+
