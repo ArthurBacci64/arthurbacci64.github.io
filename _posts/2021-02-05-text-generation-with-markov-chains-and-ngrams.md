@@ -90,7 +90,7 @@ C   0.5 0.2 0.0
 I call it as `probabilites table` because it shows the probabilities of
 `A->B`, `B->A`...
 
-Now the alst step: create a new sequence that looks similar to the
+Now the last step: create a new sequence that looks similar to the
 original one but it is not equal.
 
 For doing it, we will first select a initial state, I will choose `A`
