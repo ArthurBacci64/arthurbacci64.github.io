@@ -559,8 +559,8 @@ while last_ngram() in ngrams:
 Now, we still have a problem, it can generate sequences like
 `Data can be simple, data can w`, but it stops because there
 had never been a ngram `n w`, that is a problem. As I said,
-we can solve it by searching for ` w` and if we still did not
-find, the `w`, and in the last case, where there is no `w`,
+we can solve it by searching for `* w` and if we still did not
+find, for `**w`, and in the last case, where there is no `**w`,
 stop. We have the solution, let's implement it, it is not so
 difficult, we can make a function for doing it. We can replace
 `table[ngrams.index(last_ngram())]` for `getrow()`. Making it
