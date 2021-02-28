@@ -1,5 +1,7 @@
 # Atr
 
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Farthurbacci64.github.io%2F)
+
 ## My projects
 
 These are some of my programming projects, most part, if not all, of them are made in C. The command for compiling and running is usually the same:
