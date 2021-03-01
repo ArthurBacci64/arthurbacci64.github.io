@@ -1,6 +1,6 @@
 # Atr
 
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Farthurbacci64.github.io%2F)
+<img src=https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Farthurbacci64.github.io%2F>
 
 ## My projects
 
